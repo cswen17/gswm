@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Get Stuff With Me!!</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).bind('pageinit', function(){
+            $('.ui-body-a').hide();
+            $('#page1').show();
+            $('#page1').delay(1000).hide();
+
+        });
+
+    </script>
+</head>
+<body>
+
+<div data-role="page" >
+    <div id="page1" class="ui-body-a">
+        <h1>Welcome to Get Stuff With Me!</h1>
+    </div>
+
+    <div id="page2" class="ui-body-a">
+        <h2>Have you ever wanted to get stuff, but couldn't because you were busy or too lazy?</h2>
+    </div>
+
+    <div id="page3" class="ui-body-a">
+        <h2>Use Get Stuff With Me to ask your friends to buy them for you!</h2>
+    </div>
+    <div id="page4" class="ui-body-a">
+        <h1>Simply post things you need</h1>
+    </div>
+
+    <div id="page5" class="ui-body-a">
+        <h1>And get them from your friends!!</h1>
+    </div>
+
+</div><!-- /page -->
+
+</body>
+</html>
+
+
