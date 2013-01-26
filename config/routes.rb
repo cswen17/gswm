@@ -1,11 +1,24 @@
 Gswm::Application.routes.draw do
   resources :users
   root :to => 'static_pages#home'
+<<<<<<< HEAD
   match '/registration', to: "users#new"
   
   get "static_pages/help"
   get "static_pages/newIndex"
   get "static_pages/openingPage"
+=======
+  resources :sessions, only: [:new, :create, :destroy]
+
+  match '/signup', to: 'users#new'
+  match '/signin', to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
+
+  get "static_pages/help"
+  get "static_pages/newIndex"
+  get "static_pages/openingPage"
+ # get "static_pages/registration"
+>>>>>>> 36accde7fac960e677f4a8985b1ce0748d1b0ebc
   get "static_pages/testbs"
   get "static_pages/test"
 
