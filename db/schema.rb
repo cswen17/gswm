@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(:version => 20130126175522) do
     t.string   "password"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
-    t.string   "password_diges"
+    t.string   "password_digest"
     t.integer  "karma"
   end
 
